@@ -1,0 +1,139 @@
+body{
+margin: 0;
+padding: 0;
+background-color: #0d1321;
+height: 100vh;
+box-sizing: border-box;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #1d2d44;
+    align-items: center;
+    height: 70px;
+    padding: 10px 50px;
+}
+h1{
+    color: #f0ebd8;
+}
+.inputs{
+    text-align: center;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+#city-input{
+    padding: 10px 25px;
+    width: 200px;
+    border: none;
+    height: 17px;
+    border-radius: 5px;
+    background-color: #f0ebd8;
+    transition: all 0.5s ease;
+    color: #0d1321;
+}
+#city-input:focus{
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(205, 255, 235, 0.4);
+}
+
+#city-input:hover{
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px rgba(46, 229, 157, 0.4);
+}
+
+span{
+    font-size: 15px;
+    position: relative;
+    top: 30px;
+    left: 170px;
+    color: hsl(0, 98%, 53%);
+    display: none;
+}
+
+#search-btn{
+    background-color: #1e3a8a  ;
+    color: #f0ebd8;
+    padding: 10px 20px;
+    height: 37px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 45px;
+    font-weight: 200;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
+
+}
+
+#search-btn:hover{
+    box-shadow: 0px 2px 12px rgba(155, 123, 123, 0.473);
+    color: #f0ebd8;
+    background-color: #0f6799;
+  transform: translateY(-4px);
+}
+#search-btn:active{
+    transform: translateY(-1px);
+}
+
+
+.weather-details{
+    background-color: #748cab;
+    width: 50vw;
+    height: 70vh;
+    display: grid;
+    place-self: center;
+    color: #f0ebd8;
+    margin-top: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+h2{
+    font-size: 2em;
+    position: relative;
+    bottom: 20px;
+}
+.details{
+    background-color: #0d1321;
+    height: 350px;    
+    position: relative;
+    bottom: 20px;
+    border: 2px solid #f0ebd8;
+    border-radius: 30px;
+    display: none;
+    font-size: 1.5em;
+}
+
+
+@keyframes fadeIN {
+    0%{
+        opacity: 0;
+        transform: translatey(-10px);
+    }
+    
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+
+}
+
+.Animation{
+    animation: fadeIN 0.5s ease-in-out ;
+}
